@@ -1,7 +1,7 @@
 language: java
 jdk:
 #  - oraclejdk6
-#  - oraclejdk7
+  - oraclejdk7
   - oraclejdk8
 
 sudo: required
@@ -15,9 +15,9 @@ after_success:
   - mvn test
 
 
-#notifications:
-#  email:
-#    recipients:
-#      - aivaras.silale@gmail.com
-#    on_success: never # default: change
-#    on_failure: always # default: always
+notifications:
+  email:
+    recipients:
+      - aivaras.silale@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
