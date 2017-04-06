@@ -6,4 +6,9 @@ sudo: false # faster builds
 after_success:
   - mvn clean install
   - mvn test
-
+notifications:
+  email:
+    recipients:
+      - aivaras.silale@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always

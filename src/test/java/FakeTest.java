@@ -9,7 +9,7 @@ public class FakeTest {
 @Test
 public void simpleTest() {
     int vienas = 1;
-    Assert.assertEquals(1, vienas);
+    Assert.assertEquals(2, vienas);
 }
 
 }
