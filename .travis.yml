@@ -15,6 +15,7 @@ install: true
 
 script:
   - sudo apt-get update && sudo apt-get install oracle-java8-installer
+    - sudo apt-get update && sudo apt-get install oracle-java7-installer
   - java -version
   - mvn test
 #after_success:
