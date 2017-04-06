@@ -9,13 +9,13 @@ public class FakeTest {
 @Test
 public void simpleTest() {
     int vienas = 1;
-    Assert.assertEquals(2, vienas);
+    Assert.assertEquals(1, vienas);
 }
 
-//
-//@Test
-//public void lambadaTest(){
-//    Runnable runnable2 = () -> { System.out.println("Running from Lambda"); };
-//}
+
+@Test
+public void lambadaTest(){
+    Runnable runnable2 = () -> { System.out.println("Running from Lambda"); };
+}
 
 }
