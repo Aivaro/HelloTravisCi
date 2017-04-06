@@ -12,6 +12,7 @@ public void simpleTest() {
     Assert.assertEquals(1, vienas);
 }
 
+
 //
 //@Test
 //public void lambadaTest(){
