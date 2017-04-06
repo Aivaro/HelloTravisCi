@@ -13,8 +13,7 @@ install: true
 
 
 script:
-  - java -version
-  - mvn test
+  - mvn clean verify
 #after_success:
 
 notifications:
