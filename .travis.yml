@@ -11,7 +11,6 @@ script:
   - sudo apt-get update && sudo apt-get install oracle-java8-installer
   - java -version
 after_success:
-  - mvn clean install
   - mvn test
 
 
