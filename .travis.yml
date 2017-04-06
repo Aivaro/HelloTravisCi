@@ -1,11 +1,22 @@
 language: java
 jdk:
   - oraclejdk8
-  - oraclejdk7
-sudo: false # faster builds
+  #- oraclejdk7
+sudo: required
+
+jdk:
+  - oraclejdk8
+
+install: true
+
+script:
+  - sudo apt-get update && sudo apt-get install oracle-java8-installer
+  - java -version
 after_success:
   - mvn clean install
   - mvn test
+
+
 notifications:
   email:
     recipients:
