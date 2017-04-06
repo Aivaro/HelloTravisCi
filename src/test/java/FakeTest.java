@@ -12,4 +12,12 @@ public void simpleTest() {
     Assert.assertEquals(1, vienas);
 }
 
+@Test
+public void lambadaTest(){
+    Runnable runnable2 = () -> { System.out.println("Running from Lambda"); };
+
+
+
+}
+
 }
